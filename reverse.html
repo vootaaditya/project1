@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title> reverse a number </title>
+   <title> reverse a number </title>	 
    </head>
    <body>
-   <script>
-   function revNumber()
-   {
-    var a, b = 0;
-	a = parseInt(prompt("Enter number to reverse: "));
-   while(a > 0)
-    {      
-        b = b * 10;
-
-        b = b + parseInt(a % 10);
-
-        a = parseInt(a / 10);
-		document.write("Reversed number: ", b);
-
-    }
-    
-	}
-</script>	 
       <div class="row">
             <div class="col-md-5">
                 <h1>enter a number</h1>
@@ -29,13 +11,15 @@
         </div>
          <div class="row">
             <div class="col-md-5">
-              <input type = "text" name = "num" id = "num" placeholder = "enter a number" required>
+              <input type = "text" name = "num" id = "num">
 			  </div>
         </div>
+        <br/>
          	<div class="row">
             <div class="col-md-5">
               <button type = "submit" value = "submit" onclick="revNumber();">submit</button>
 			  </div>
         </div>
+        <script type = "text/javascript" src= "../src/reverse.js"></script>
   </body>
   </html>  
